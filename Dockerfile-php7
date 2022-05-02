@@ -21,7 +21,7 @@ RUN apt-get update \
     && apt-get -y install git wget \
     && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/* \
     && wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1.5_amd64.deb \
-    && apt-get install ./multiarch-support_2.27-3ubuntu1.5_amd64.deb
+    && apt-get install ./multiarch-support_2.27-3ubuntu1.5_amd64.deb \
     && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
 # Install MS ODBC Driver for SQL Server / PHP Extensions
